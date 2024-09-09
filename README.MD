@@ -40,6 +40,39 @@
 
 2. **Install Node.js**: Required for running JavaScript code. Download and install it from the [Node.js official website](https://nodejs.org/).
 
+## 🛠️ Building and Running on a 32-bit System
+
+By default, when you compile Rust code on a 64-bit system, it targets 64-bit architecture. However, Rust allows you to build and run applications for 32-bit systems by specifying the appropriate target. Below is an explanation on how to set it up.
+
+### Steps to Build and Run for 32-bit Systems:
+
+1. **Install Rust (if not installed)**
+
+   Make sure you have installed the Rust toolchain on your machine:
+
+   - [Windows 32-bit Rust Installer](https://static.rust-lang.org/rustup/dist/i686-pc-windows-msvc/rustup-init.exe)
+
+2. **Add the 32-bit Target**
+
+   Since the program is built on a 64-bit system, you'll need to add the 32-bit target to allow building for 32-bit systems.
+
+   In your terminal, run the following command to add the 32-bit target:
+   ```
+   rustup target add i686-pc-windows-msvc
+   ```
+
+## Build for 32-bit Architecture
+
+This command tells Rust to add support for compiling to 32-bit Windows systems.
+
+Once you’ve added the 32-bit target, you can build the project specifically for 32-bit using the `--target` flag.
+
+### To build for 32-bit:
+
+```bash
+cargo build --target=i686-pc-windows-msvc
+
+
 ### Steps to Run:
 
 1. **Clone the repository:**
