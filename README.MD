@@ -69,9 +69,49 @@ Once you’ve added the 32-bit target, you can build the project specifically fo
 
 ### To build for 32-bit:
 
-```bash
+```
 cargo build --target=i686-pc-windows-msvc
+```
+- This command will compile your project for the 32-bit target. The resulting executable will be compatible with 32-bit Windows systems.
 
+## Run the Program (Optional)
+
+After building the program, you can run the 32-bit version directly by specifying the target.
+
+### Run the following command:
+
+```
+cargo run --target=i686-pc-windows-msvc
+```
+This will compile and immediately run the 32-bit version of the **Bubbles Code Text Editor**.
+
+## Why This is Needed:
+
+- **Default Target (64-bit)**: If you're on a 64-bit system, Rust will automatically build and run for the `x86_64-pc-windows-msvc` target, which is the 64-bit version.
+- **Cross-compiling for 32-bit**: By specifying `i686-pc-windows-msvc`, you ensure the binary is compiled for 32-bit systems, enabling it to run on older machines or systems that only support 32-bit executables.
+
+## Common Issues and Fixes:
+
+- **Missing 32-bit libraries**: If you encounter errors while building for the 32-bit target (e.g., missing libraries), you may need to install additional 32-bit development tools. On Windows, installing the MSVC 32-bit build tools will solve this.
+
+- **Running on a 32-bit system**: After building the 32-bit executable on a 64-bit system, transfer the resulting binary to a 32-bit machine for testing. The binary should work as expected on any 32-bit Windows system.
+
+## Recap:
+
+### Add 32-bit target using:
+```
+rustup target add i686-pc-windows-msvc
+```
+
+### Build for 32-bit using:
+```
+cargo build --target=i686-pc-windows-msvc
+```
+
+### Run for 32-bit using:
+```
+cargo run --target=i686-pc-windows-msvc
+```
 
 ### Steps to Run:
 
