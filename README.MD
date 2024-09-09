@@ -42,7 +42,7 @@
 
 ## 🛠️ Building and Running on a 32-bit System
 
-By default, when you compile Rust code on a `64-bit system`, it targets `64-bit architecture`. However, Rust allows you to build and run applications for `32-bit systems` by specifying the appropriate target. Below is an explanation on how to set it up.
+By default, when you compile Rust code on a `64-bit system`, it targets `64-bit architecture`. However, Rust allows you to `build` and `run` applications for `32-bit systems` by specifying the appropriate target. Below is an explanation on how to set it up.
 
 ### Steps to Build and Run for 32-bit Systems:
 
