@@ -1,4 +1,4 @@
-## Check `.rs` file thanks :) 
+## Check `dummy.rs` file thanks :) 
 
 
 # 📝 Bubbles Code Text Editor
