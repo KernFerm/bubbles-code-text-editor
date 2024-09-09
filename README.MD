@@ -28,17 +28,20 @@
 - **Batch**: Execute Batch commands in a Windows environment.
 - **PowerShell**: Run PowerShell scripts on supported platforms.
 
-## 🛠️ Installation Instructions
+---
 
-To run **Bubbles Code Text Editor** on your machine, follow these steps:
+## 🛠️ Building and Running Instructions (for 64-bit and 32-bit systems)
 
 ### Prerequisites:
-1. Install **Rust**: If you don't have Rust installed, you can get it:
--  [Windows 64 Bit RUST Installer](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
--  [Windows 32 Bit RUST Installer](https://static.rust-lang.org/rustup/dist/i686-pc-windows-msvc/rustup-init.exe)
-2. Install **Node.js**: Required for running JavaScript code. Download and install it from the [Node.js official website](https://nodejs.org/).
+
+1. **Install Rust**: Ensure that you have Rust installed. Use the following installers based on your system:
+   - [Windows 64-bit Rust Installer](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
+   - [Windows 32-bit Rust Installer](https://static.rust-lang.org/rustup/dist/i686-pc-windows-msvc/rustup-init.exe)
+
+2. **Install Node.js**: Required for running JavaScript code. Download and install it from the [Node.js official website](https://nodejs.org/).
 
 ### Steps to Run:
+
 1. **Clone the repository:**
    ```
    git clone https://github.com/kernferm/bubbles-code-text-editor.git
@@ -50,53 +53,49 @@ To run **Bubbles Code Text Editor** on your machine, follow these steps:
    cargo run
    ```
 
-3. ***The application will open the editor, and you can start coding in your preferred language.***
+3. **Start using the editor:** The application will open the editor, and you can start coding in your preferred language.
 
 ## 🔧 Usage Instructions
 
-A) **Writing and Running Code:** 
-
+### A) Writing and Running Code:
 1. Select the language of your code (e.g., Python, Rust, JavaScript) by clicking the respective button at the top of the editor.
 2. Write or paste your code into the editor.
-3. To run the code, click on the `▶️ Run Code` button. The output will be displayed below the editor.
+3. To run the code, click on the "▶️ Run Code" button. The output will be displayed below the editor.
 
-B) **File Management:**
-- To save the code to a file:
+### B) File Management:
+#### To save the code to a file:
 1. Enter the file path in the provided input field.
-2. Click on `💾 Save` to save your current work.
+2. Click on "💾 Save" to save your current work.
 
-- To `load` an existing file:
+#### To load an existing file:
 1. Enter the file path in the input field.
-2. Click `📂 Load` to open the file in the editor.
+2. Click "📂 Load" to open the file in the editor.
 
-C) **Auto-Save:**
-
-1. Enable `Auto-Save` by checking the box labeled `Enable Auto-Save`.
+### C) Auto-Save:
+1. Enable Auto-Save by checking the box labeled "Enable Auto-Save".
 2. Set the interval (in minutes) for how frequently you want the editor to auto-save your work.
 
-D) **Clearing the Editor:**
-
-1. Click `🗑️ Clear` to remove all content from the editor and reset the output and status messages.
+### D) Clearing the Editor:
+1. Click "🗑️ Clear" to remove all content from the editor and reset the output and status messages.
 
 ## 🚀 How It Works
-- The `Bubbles Code Text Editor` supports multiple languages, and here's how the code execution works for each:
 
-1. **Python:** Runs the code using the `python` command.
-2. **JavaScript:** Uses Node.js (`node`) to execute JavaScript code.
-3. **Rust:** Compiles Rust code using `rustc`, then executes the compiled binary.
-4. **Batch:** Executes Batch commands via `cmd.exe` on Windows systems.
-5. **PowerShell:** Executes PowerShell commands via `powershell` on supported platforms.
+### Code Execution:
+The Bubbles Code Text Editor supports multiple languages, and here's how the code execution works for each:
 
-## **Auto-Save Mechanism:**
+- **Python**: Runs the code using the `python` command.
+- **JavaScript**: Uses Node.js (`node`) to execute JavaScript code.
+- **Rust**: Compiles Rust code using `rustc`, then executes the compiled binary.
+- **Batch**: Executes Batch commands via `cmd.exe` on Windows systems.
+- **PowerShell**: Executes PowerShell commands via `powershell` on supported platforms.
 
-- Auto-save is implemented using asynchronous operations powered by `Tokio`. When auto-save is enabled, the editor saves the file at the specified intervals without user intervention.
+### Auto-Save Mechanism:
+Auto-save is implemented using asynchronous operations powered by **Tokio**. When auto-save is enabled, the editor saves the file at the specified intervals without user intervention.
 
-## **Code Output:**
+### Code Output:
+Output from running the code is captured and displayed in the editor’s output section. This feature works by executing the appropriate system command based on the selected language and capturing the result of the execution.
 
-- Output from running the code is captured and displayed in the editor’s output section. This feature works by executing the appropriate system command based on the selected language and capturing the result of the execution.
-
-## **🏗️ Project Structure**
-
+## 🏗️ Project Structure
 ```
 /src
   └── main.rs           # Main application code
@@ -105,55 +104,22 @@ Cargo.toml               # Project dependencies and metadata
 README.md                # Project documentation
 ```
 
-## **🧩 Dependencies**
+## 🧩 Dependencies
+- **eframe**: The main framework for building the user interface.
+- **Tokio**: Used for asynchronous operations like auto-save.
+- **std::process**: Standard Rust library for executing external processes.
+- **fs**: Standard Rust file system operations for saving/loading files.
 
-- **eframe:** The main framework for building the user interface.
-- **Tokio:** Used for asynchronous operations like auto-save.
-- **std::process:** Standard Rust library for executing external processes.
-- **fs:** Standard Rust file system operations for saving/loading files.
-
-## **🚧 Future Enhancements**
-
+## 🚧 Future Enhancements
 - Add syntax highlighting for different languages.
 - Expand support for additional programming languages.
 - Improve error handling and better output formatting.
 - Add customizable themes for the user interface.
 
-
-## **🤝 Contributing**
-
-We welcome contributions to **Bubbles Code Text Editor**. If you would like to contribute, please fork the repository, make your changes, and submit a pull request. 
-
-Feel free to submit issues and feature requests via the [GitHub Issues page](https://github.com/kernferm/bubbles-code-text-editor/issues). Your feedback helps improve the project!
-
-
-## **🎉 Acknowledgments**
-
-Special thanks to the Rust community for providing excellent tools and libraries. This project is inspired by a need for a simple yet powerful code editor that supports multiple languages and is easy to use.
+## 🤝 Contributing
+We welcome contributions to **Bubbles Code Text Editor**. If you would like to contribute, please fork the repository, make your changes, and submit a pull request. We appreciate your help in improving the project!
 
 ## 📄 License
-
-**Bubbles Code Text Editor** is proprietary software, and the owner retains all rights to the project. You may contribute to the project, but by doing so, you agree to grant the owner an irrevocable, perpetual, royalty-free license to use, modify, and distribute your contributions. 
+**Bubbles Code Text Editor** is proprietary software, and the owner retains all rights to the project. You may contribute to the project, but by doing so, you agree to grant the owner an irrevocable, perpetual, royalty-free license to use, modify, and distribute your contributions.
 
 While contributions are credited, contributors do not retain ownership or control over any part of the project, and the final decision regarding contributions remains with the owner. No part of the codebase may be reproduced, distributed, or transmitted in any form without explicit permission from the owner.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
