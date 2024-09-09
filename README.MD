@@ -42,7 +42,7 @@
 
 ## 🛠️ Building and Running on a 32-bit System
 
-By default, when you compile Rust code on a 64-bit system, it targets 64-bit architecture. However, Rust allows you to build and run applications for 32-bit systems by specifying the appropriate target. Below is an explanation on how to set it up.
+By default, when you compile Rust code on a `64-bit system`, it targets `64-bit architecture`. However, Rust allows you to build and run applications for `32-bit systems` by specifying the appropriate target. Below is an explanation on how to set it up.
 
 ### Steps to Build and Run for 32-bit Systems:
 
@@ -54,7 +54,7 @@ By default, when you compile Rust code on a 64-bit system, it targets 64-bit arc
 
 2. **Add the 32-bit Target**
 
-   Since the program is built on a 64-bit system, you'll need to add the 32-bit target to allow building for 32-bit systems.
+   Since the program is built on a `64-bit system`, you'll need to add the `32-bit target` to allow building for `32-bit systems`.
 
    In your terminal, run the following command to add the 32-bit target:
    ```
@@ -63,7 +63,7 @@ By default, when you compile Rust code on a 64-bit system, it targets 64-bit arc
 
 ## Build for 32-bit Architecture
 
-This command tells Rust to add support for compiling to 32-bit Windows systems.
+This command tells Rust to add support for compiling to `32-bit Windows systems`.
 
 Once you’ve added the 32-bit target, you can build the project specifically for 32-bit using the `--target` flag.
 
@@ -72,11 +72,11 @@ Once you’ve added the 32-bit target, you can build the project specifically fo
 ```
 cargo build --target=i686-pc-windows-msvc
 ```
-- This command will compile your project for the 32-bit target. The resulting executable will be compatible with 32-bit Windows systems.
+- This command will compile your project for the `32-bit target`. The resulting executable will be compatible with `32-bit Windows systems`.
 
 ## Run the Program (Optional)
 
-After building the program, you can run the 32-bit version directly by specifying the target.
+After building the program, you can run the `32-bit version` directly by specifying the `target`.
 
 ### Run the following command:
 
