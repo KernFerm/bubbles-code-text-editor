@@ -1,6 +1,6 @@
 # 📝 Bubbles Code Text Editor
 
-**Bubbles Code Text Editor** is a powerful, feature-rich code editor designed for developers who need a simple, efficient, and lightweight tool to write, save, and execute code. Built using **Rust** and **eframe::egui**, the editor supports multiple programming languages, including Python, JavaScript (Node.js), Rust, Batch, and PowerShell. It also offers essential features such as file management, auto-save, and real-time code execution.
+**Bubbles Code Text Editor** is a powerful, feature-rich code editor designed for developers who need a simple, efficient, and lightweight tool to write, save, and execute code. Built using **Rust** and **eframe::egui**, the editor supports multiple programming languages, including **Python**, **JavaScript** (`Node.js`), **Rust**, **Batch**, and **PowerShell**. It also offers essential features such as file management, auto-save, and real-time code execution.
 
 ## 🌟 Key Features
 
